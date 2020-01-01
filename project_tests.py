@@ -1,9 +1,8 @@
 import numpy as np
-from keras.losses import sparse_categorical_crossentropy
-from keras.models import Sequential
-from keras.preprocessing.text import Tokenizer
-from keras.utils import to_categorical
-
+from tensorflow.keras.losses import sparse_categorical_crossentropy
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.utils import to_categorical
 
 def _test_model(model, input_shape, output_sequence_length, french_vocab_size):
     if isinstance(model, Sequential):
